@@ -110,6 +110,8 @@ def compareGenomes(verbatim=False, trials=30, n=10, prob='ED', seed=None):
         if prob == 'ED':
             edited = makeEdits(s1, edits)
             if edited != s2:
+                print(f'edited: {edited}')
+                print(f's2: {s2}')
                 print('Failed Test!!!')
     avg = avg/trials
     if verbatim:
@@ -148,6 +150,9 @@ def compareRandStrings(verbatim=False, trials=30, n=10, prob='ED', seed=None):
         if prob == 'ED':
             edited = makeEdits(s1, edits)
             if edited != s2:
+                print(f'edited: {edited}')
+                print(f's2: {s2}')
+                print('Failed Test!!!')
                 print('Failed Test!!!')
     avg = avg/trials
     if verbatim:
